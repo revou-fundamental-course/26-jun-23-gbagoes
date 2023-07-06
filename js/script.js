@@ -20,12 +20,11 @@ function nameValidation(fname){
 var slideIndex = 1
 setInterval(function(){
     plusDiv(1)
-}, 1500)
+}, 2000)
 
 function plusDiv(index){
     showImage(slideIndex += index)
 }
-
 
 function showImage(index){
     console.log(index)
@@ -36,9 +35,4 @@ function showImage(index){
         imgList[i].style.display = "none"
     }
     imgList[slideIndex - 1].style.display = "block"
-}
-
-[img1,img2,img3]
-for (i=0; i < 10; i++){
-    console.log(i);
 }

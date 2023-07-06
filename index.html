@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="home">
@@ -24,16 +24,45 @@
     </header>
 
     <main>
-        <div class="main-content">
-            <section class="left-content">
-                <img class="slider" src="img/image-1.jpg" alt="">
-                <img class="slider" src="img/image-2.jpg" alt="">
-                <img class="slider" src="img/image-3.jpg" alt="">
-                <h5>"Setiap hari beli sayur buah yang fresh disini"</h5>
-            </section>
-            <section class="right-content">
-                
-                <section id="form">
+        <section class="main-content">
+            <div class="left-content">
+                <div class="slider-1 slider">
+                    <img class="img-slider" src="img/image-1.jpg" alt="">
+                    <h5>"Setiap hari beli sayur buah yang fresh disini"</h5>
+                    <div class="testimoni">
+                        <img class="img-testimoni" src="img/testimoni-1.webp" alt="">
+                        <div class="detail-testimoni">
+                            <h4>Tony Stark</h4>
+                            <h5>Avengers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-2 slider">
+                    <img class="img-slider" src="img/image-2.jpg" alt="">    
+                    <h5>"Buah dan sayur-sayurnya segar dan bersih"</h5>
+                    <div class="testimoni">
+                        <img class="img-testimoni" src="img/testimoni-2.webp" alt="">
+                        <div class="detail-testimoni">
+                            <h4>Captain America</h4>
+                            <h5>Avengers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-3 slider">
+                    <img class="img-slider" src="img/image-3.jpg" alt="">
+                    <h5>"Kualitas produknya mantap dan harganya murah"</h5>
+                    <div class="testimoni">
+                        <img class="img-testimoni" src="img/testimoni-3.webp" alt="">
+                        <div class="detail-testimoni">
+                            <h4>Thor</h4>
+                            <h5>Avengers</h5>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="right-content">
+                <section id="form-contact">
                     <h4>Contact Us</h4>
                     <h5>Sales Akan Menghubungi Anda 1x24jam Setelah Data Kami Terima.</h5>
                     <form name="contact-us-form" class="contact-form">
@@ -46,20 +75,94 @@
                         <input type="email" id="emailInput" placeholder="example@gmail.com"><br><br>
         
                         <!-- Phone Number -->
-                        <!-- <label for="phone">Phone Number</label>
-                        <input type="number" placeholder="Phone Number"><br><br> -->
+                        <label for="phone">Phone Number</label><br>
+                        <input type="number" placeholder="Phone Number"><br><br>
         
                         <!-- Message -->
-                        <!-- <label for="message">Your Message</label>
-                        <textarea name="message" id="message" placeholder="Type Your Message"></textarea><br><br> -->
+                        <label for="message">Your Message</label><br>
+                        <textarea name="message" id="message" placeholder="Type Your Message"></textarea><br><br>
         
                         <!-- Submit Button -->
                         <button type="button" id="submitButton">Send</button>
                     </form>
                 </section>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="features">
+            <h3>Temukan Kemudahan Belanja dengan E-Groceries kami!</h3>
+            <div class="features-list">
+                <h6 class="poin">1</h6>
+                <div class="features-detail">
+                    <h5>Kualitas Terbaik, Harga Terjangkau</h5>
+                    <p>Dapatkan barang-barang berkualitas terbaik untuk kebutuhan sehari-hari Anda dengan harga yang kompetitif.</p>
+                </div>
+            </div>
+            <div class="features-list">
+                <h6 class="poin">2</h6>
+                <div class="features-detail">
+                    <h5>Pengiriman Cepat dan Andal</h5>
+                    <p>Kami bekerja sama dengan mitra pengiriman terpercaya untuk mengantarkan pesanan Anda langsung ke pintu rumah Anda dalam waktu singkat.</p>
+                </div>
+            </div>
+            <div class="features-list">
+                <h6 class="poin">3</h6>
+                <div class="features-detail">
+                    <h5>Promo dan Diskon Menarik</h5>
+                    <p>Nikmati penawaran istimewa, diskon eksklusif, dan promo menarik setiap saat.</p>
+                </div>
+            </div>
+        </section>
+        <section class="wrap-our-packages" id="our-package">
+            <div class="our-packages-title">
+                <h2>Our Packages</h2>
+            </div>
+            <div class="our-packages-list">
+                <div class="detail-package">
+                    <img src="img/fresh-vegetables.jpg" alt="">
+                    <h3>Fresh Vegetables</h3>
+                    <p>Sayur segar langsung dari sumber pertanian terbaik</p>
+                </div>
+                <div class="detail-package">
+                    <img src="img/fresh-fruit.jpg" alt="">
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari lokal atau import dan harga yang terbaik</p>
+                </div>
+                <div class="detail-package">
+                    <img src="img/instant-delivery.jpg" alt="">
+                    <h3>Instant Delivery</h3>
+                    <p>Dikirim instant oleh kurir yang telah ditraining dengan SOP untuk menjaga kondisi belanjaan kamu</p>
+                </div>
+                <div class="detail-package">
+                    <img src="img/spices.jpg" alt="">
+                    <h3>Kitchen Ingredients</h3>
+                    <p>Bumbu dapur lengkap untu keperluan memasak kamu</p>
+                </div>
+                <div class="detail-package">
+                    <img src="img/kitchen-set.jpg" alt="">
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                </div>
+                <div class="detail-package">
+                    <img src="img/bundling.jpg" alt="">
+                    <h3>Bundling Set</h3>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapurmu</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section" id="call-us">
+            <h2>Jangan sia-siakan waktu Anda, segera mulai belanja dengan e-groceries kami dan rasakan manfaatnya!</h2>
+            <p>Klik tombol "Daftar Sekarang" untuk memulai pengalaman belanja yang praktis, hemat waktu, dan menyenangkan. Bergabunglah dengan komunitas pelanggan kami yang puas dan nikmati semua keunggulan produk-produk berkualitas tinggi dengan harga terjangkau.</p>
+            <a href="#form-contact" class="button-cta">
+                <button type="button" class="btn-cta">
+                    Daftar Sekarang
+                </button>
+            </a>
+        </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+<footer>
+    <img src="img/revou-logo.png" alt="">
+    <p>Gbagoes © 2023</p>
+</footer>
 </html>

@@ -1,5 +1,6 @@
 body{
     font-family:"Montserrat";
+    margin: 0;
 }
 
 .wrap-header {
@@ -24,6 +25,9 @@ body{
 
 .wrap-header nav a{
     padding:10px;
+    color: #232323;
+    text-decoration: none;
+    border: 1px solid #000;
 }
 
 .banner-home {
@@ -53,8 +57,56 @@ body{
     overflow: hidden;
 }
 
-.left-content img{
+.slider{
+    display: block;
+    margin: auto auto;
+}
+
+.slider .img-slider{
     width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider h5 {
+    font-size:20px;
+    text-align:center;
+    color: #798da3;
+    font-style:italic;
+    font-weight:500;
+}
+
+.testimoni {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
+
+.img-testimoni{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.detail-testimoni h4{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.detail-testimoni h5{
+    font-size:15px;
+    text-align:left;
+    margin-top:10px;
+}
+
+.left-content hr {
+    margin: 50px auto;
+    width: 40%;
+    text-align: center;
+    border: 1px solid #EBEBEB;
 }
 
 .right-content{
@@ -62,6 +114,7 @@ body{
     background: #edf0f4;
     padding: 30px 50px;
     position: relative;
+    border-radius: 10px;
 }
 
 #form h4 {
@@ -76,10 +129,486 @@ body{
     line-height: 1.5;
 }
 
-.slider{
-    display: block;
-    margin: auto auto;
-    margin-top:20px;
-    height: 550px;
+.contact-form input {
+    width: 100%;
+    height:50px;
+    border-radius:5px;
+    border:1px solid #798da3;
+    text-indent:10px;
+    font-family:"Montserrat";
+}
+
+.contact-form textarea{
+    width:100%;
+    height:100px;
+    border-radius:5px;
+    border: 1px solid #798da3;
+    text-indent:10px;
+    font-family: "Montserrat";
+}
+
+.contact-form button{
+    width:100%;
+    background:#29323d;
+    color:#fff;
+    height:50px;
+    border-radius:5px;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:20px;
+    font-family:"Montserrat";
+}
+
+.features {
+    margin:20px 0;
+    padding:50px;
+    width: 50%;
+}
+
+.features-list {
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.features-list .poin {
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    flex-basis: 20px;
+}
+
+.features-detail {
+    margin-left: 30px;
+}
+
+.features-detail h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.features-detail p {
+    font-style: italic;
+    font-size: 15px;
+    color: #798da3;
+}
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
+.our-packages-title {
+    text-align: center;
+    padding:80px 50px;
+    background:#edf0f4;
+}
+
+.our-packages-title h2{
+    margin:0;
+    font-size:30px;
+}
+
+.our-packages-list {
+    display: flex;
+    flex-wrap:wrap;
+    padding: 50px;
+    justify-content: center;
+}
+
+.detail-package {
+    width: 30%;
+    border: 1px solid #edf0f4;
+    border-radius:20px;
+    margin: 20px;
+    text-align: center;
+    overflow:hidden;
+    position:relative;
+    transition: .3s;
+}
+
+.detail-package:hover{
+    transform: scale(0.9);
+    overflow:hidden;
+    position: relative;
+}
+
+.detail-package img{
+    width:100%;
+    height: 200px;
     object-fit: cover;
+    border-radius:20px 20px 0 0;
+}
+
+.detail-package p {
+    padding: 20px;
+    color: #798da3;
+}
+
+.cta-section {
+    border-top:1px solid #EBEBEB;
+    padding:50px;
+    text-align:center;
+    width: 70%;
+    margin: auto;
+}
+
+.cta-section h2{
+    font-size:30px;
+}
+
+.cta-section p {
+    color:#798da3;
+}
+
+.btn-cta {
+    padding: 20px 50px;
+    font-family: "Montserrat";
+    font-size: 20px;
+    background:#29323d;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    border:none;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #EBEBEB;
+    padding:10px;
+    background:#edf0f4;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:12px;
+    font-style:italic;
+    margin:0;
+}
+
+
+@media only screen and (min-width:600px){
+    .banner-home{
+        padding:20px;
+    }
+
+    .banner-home h2{
+        font-size:30px;
+    }
+
+    .main-content{
+        padding: 20px;
+        display: block;
+    }
+
+    .left-content{
+        width:100%;
+    }
+
+    .slider .img-slider{
+        height:200px;
+    }
+
+    .slider h5{
+        font-size:15px;
+    }
+
+    .img-testimoni{
+        width: 75px;
+        height: 75px;
+    }
+
+    .right-content{
+        width: auto;
+    }
+
+    #form-contact h4{
+        font-size:20px;
+    }
+    
+    #form-contact h5{
+        line-height:1.5;
+    }
+
+    .features{
+        width:auto;
+    }
+
+    .features h3{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .features-list{
+        display:block;
+        margin: 10px 0 40px 0;
+    }
+
+    .features-list .poin{
+        text-align:center;
+        width:auto;
+        margin: unset;
+        font-size: 25px;
+    }
+
+    .features-detail h5{
+        margin: 5px;
+    }
+
+    .our-packages-list{
+        padding: 50px 0;
+    }
+
+    .detail-package{
+        width: 40%;
+        margin: 10px;
+    }
+
+    .detail-package h3{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    
+    .detail-package p{
+        margin: 0;
+        font-size:13px;
+        padding: 20px 10px;
+    }
+
+    .cta-section{
+        padding: 50px 20px;
+        width: auto;
+    }
+
+    .cta-section h2{
+        font-size:20px;
+        line-height:1.5;
+    }
+
+    .cta-section p{
+        font-size:13px;
+    }
+}
+
+
+@media only screen and (min-width:768px){
+    .banner-home{
+        padding:20px;
+    }
+
+    .banner-home h2{
+        font-size:30px;
+    }
+
+    .main-content{
+        padding: 20px;
+        display: flex;
+    }
+
+    .left-content{
+        width:70%;
+    }
+
+    .slider .img-slider{
+        height:200px;
+    }
+
+    .slider h5{
+        font-size:15px;
+    }
+
+    .img-testimoni{
+        width:70px;
+        height:70px;
+    }
+
+    .right-content{
+        width: 30%;
+    }
+
+    #form-contact h4{
+        font-size:20px;
+    }
+    
+    #form-contact h5{
+        line-height:1.5;
+    }
+
+    .features{
+        width:auto;
+    }
+
+    .features h3{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .features-list{
+        display:block;
+        margin: 10px 0 40px 0;
+        text-align: center;
+    }
+
+    .features-list .poin{
+        text-align:center;
+        width:auto;
+        margin: unset;
+        font-size: 25px;
+    }
+
+    .features-detail h5{
+        margin: 5px;
+    }
+
+    .our-packages-list{
+        padding: 50px 0;
+    }
+
+    .detail-package{
+        width: 40%;
+        margin: 10px;
+    }
+
+    .detail-package h3{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    
+    .detail-package p{
+        margin: 0;
+        font-size:13px;
+        padding: 20px 10px;
+    }
+
+    .cta-section{
+        padding: 50px;
+        width: 80%;
+    }
+
+    .cta-section h2{
+        font-size:20px;
+        line-height:1.5;
+    }
+
+    .cta-section p{
+        font-size:13px;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .banner-home{
+        padding:20px;
+    }
+
+    .banner-home h2{
+        font-size:30px;
+    }
+
+    .main-content{
+        padding: 20px;
+        display: block;
+    }
+
+    .left-content{
+        width:100%;
+    }
+
+    .slider .img-slider{
+        height:200px;
+    }
+
+    .slider h5{
+        font-size:15px;
+    }
+
+    .img-testimoni{
+        width:70px;
+        height:70px;
+    }
+
+    .right-content{
+        width: auto;
+    }
+
+    #form-contact h4{
+        font-size:20px;
+    }
+    
+    #form-contact h5{
+        line-height:1.5;
+    }
+
+    .features{
+        width:auto;
+    }
+
+    .features h3{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .features-list{
+        display:block;
+        margin: 10px 0 40px 0;
+        text-align: center;
+    }
+
+    .features-list .poin{
+        text-align:center;
+        width:auto;
+        margin: unset;
+        font-size: 25px;
+    }
+
+    .features-detail h5{
+        margin: 5px;
+    }
+
+    .our-packages-list{
+        padding: 50px 0;
+    }
+
+    .detail-package{
+        width: 40%;
+        margin: 10px;
+    }
+
+    .detail-package h3{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    
+    .detail-package p{
+        margin: 0;
+        font-size:13px;
+        padding: 20px 10px;
+    }
+
+    .cta-section{
+        padding: 50px;
+        width: auto;
+    }
+
+    .cta-section h2{
+        font-size:20px;
+        line-height:1.5;
+    }
+
+    .cta-section p{
+        font-size:13px;
+    }
 }
